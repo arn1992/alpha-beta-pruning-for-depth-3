@@ -208,10 +208,10 @@ double alpha=0;double beta = 0;
     for(int i=0;i<notes;i++){
     if(i==0){
          pruning++;
-     v=n6.value;
+     v=n7.value;
      beta=20;
-     if(alpha<n6.value){
-      alpha=n6.value;
+     if(alpha<n7.value){
+      alpha=n7.value;
      }
    father3.value=v;
    father3.beta=v;
@@ -220,8 +220,8 @@ double alpha=0;double beta = 0;
     }
     else if(i==1 && father3.value>father3.alpha ){
         pruning++;
-         v=n7.value;
-     alpha=n7.value;
+         v=n8.value;
+     alpha=n8.value;
     beta=20;
    // System.out.println("i2=1.0");
     
@@ -236,8 +236,8 @@ double alpha=0;double beta = 0;
         }
         else if(i==2 && father3.value>father3.alpha){
         pruning++;
-         v=n8.value;
-     alpha=n8.value;
+         v=n9.value;
+     alpha=n9.value;
     beta=20;
    // System.out.println("i2=2.0");
     
@@ -249,17 +249,17 @@ double alpha=0;double beta = 0;
     father3.beta=v;
     }     
         }
-    
     }
     
     }
     
-    if(father2.value>grandpa.value){
-    grandpa.value=father2.value;
-    grandpa.alpha=father2.value;
+    if(father3.value>grandpa.value){
+    grandpa.value=father3.value;
+    grandpa.alpha=father3.value;
     grandpa.beta=20;
     
     }
+    
     
     System.out.println("--------------------------------------");
  System.out.println("--------------------------------------");
